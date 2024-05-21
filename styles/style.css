@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -37,7 +39,7 @@ html {
 	background: var(--primary);
 	color: var(--text-base);
 	overflow-x: hidden;
-    font-family: "KoHo", sans-serif;
+    font-family: "Inria Sans", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -128,8 +130,40 @@ body:nth-child(odd){
 	border-radius: 8px;
 }
 
-
 .section-02 {
     background: var(--secondary);
     color: var(--text-secondary);
 }
+
+.cards-service {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	padding: 0 1rem;
+	margin: 0 0 2rem;
+	color: var(--primary);
+}
+
+.services h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding: 1rem 0;
+	text-align: center;
+	color: var(--golder);
+}
+
+.cards-service div {
+	max-width: 30%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1;
+	padding: 1rem
+}
+
+.cards-service div p {
+	color: rgb(97, 97, 97)
+}
+
+.cards-service div 
