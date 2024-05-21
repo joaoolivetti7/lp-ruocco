@@ -164,6 +164,7 @@ body:nth-child(odd){
 
 .cards-service div {
 	max-width: 30%;
+	min-width: 300px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -200,18 +201,35 @@ strong{
 
 .about {
 	display: flex;
-	justify-content: right;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .about .container-wpp {
 	justify-content: center;
 }
 
+.about .img-advogado {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-advogado img {
+	max-width: 400px;
+	min-width: 350px;
+}
+
 .content-about {
+	flex: 1;
 	text-align: center;
     font-size: 130%;
 	padding: 20px;
-	width: 50%;
+}
+
+@media screen {
+	
 }
 
 .content-about h1 {
@@ -236,18 +254,8 @@ strong{
     align-items: center;
 }
 
-@media  screen and (max-width: 930px) {
-	.section-05 {
-		text-align: center;
-	}
-
-	.section-05 .container-wpp {
-		padding-bottom: 2rem
-	}
-}
-
 .content-section-05 {
-	padding: 50px;
+	padding: 2rem;
 }
 
 .content-section-05 h2 {
@@ -287,6 +295,7 @@ footer {
 
 iframe {
 	width: 100%;
+	min-width: 300px;
 }
 
 .address p {
@@ -296,4 +305,32 @@ iframe {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+}
+
+@media  screen and (max-width: 480px) {
+	.section-04 .title {
+		font-size: 2.5rem;
+	}
+}
+
+@media  screen and (max-width: 930px) {
+	.section-05 {
+		text-align: center;
+	}
+
+	.section-05 .container-wpp {
+		padding-bottom: 2rem
+	}
+
+	.logo-footer {
+		border-right: none;
+		border-left: none;
+		border-top: 1px solid var(--golder);
+		border-bottom: 1px solid var(--golder)
+	}
+
+	.glide__slide img {
+		width: 100%;
+	}
+
 }
