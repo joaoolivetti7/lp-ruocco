@@ -45,11 +45,16 @@ html {
     width: 50%;
 }
 
-/* BOTAO DE WPP */
-.container-wpp {
-    width: 0%;
+body:nth-child(even){
+	background: var(--primary);
 }
 
+body:nth-child(odd){
+	background: var(--secondary);
+	color: var(--text-secondary);
+}
+
+/* BOTAO DE WPP */
 .button-wpp {
 	transition: 0.2s;
 	padding: 0.5rem 1rem;
@@ -86,12 +91,17 @@ html {
 	background: var(--text-base);
 	color: var(--whatsapp-color);
 }
-/* BOTAO DE WPP */
+
+.button-wpp:hover svg{
+	fill: var(--whatsapp-color);;
+}
+/* FIM BOTAO DE WPP */
 
 .section-01 {
     height: 500px;
     background-image: url('https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-position: center;
+	font-size: 2rem;
 }
 
 .filter {
@@ -99,6 +109,25 @@ html {
     height: 100%;
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.700) 20%, #4b2220b4)
 }
+
+.container-need {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 50%;
+	padding: 0 0 0 6%;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.container-need .container-wpp {
+	width: 90%;
+}
+
+.container-need .button-wpp {
+	border-radius: 8px;
+}
+
 
 .section-02 {
     background: var(--secondary);
