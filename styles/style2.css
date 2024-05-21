@@ -10,14 +10,14 @@
 }
 
 .content-about{
-    text-align: right;
+    text-align: center;
     padding: 20px;
     width: 50%;
-
 }
 
 .content-about h1{
-    margin-bottom: 3rem;
+    margin: 1rem 0;
+    font-size: 3rem;
 }
 
 .content-about p{
@@ -37,4 +37,14 @@
 
 .content-section-05 h2{
     font-size: 40px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+}
+
+.logo-footer img{
+    width: 200px;
+    height: 200px;
 }
