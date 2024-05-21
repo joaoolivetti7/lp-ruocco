@@ -179,3 +179,16 @@ body:nth-child(odd){
 	width: 60px;
 	height: 60px;
 }
+
+.section-04 .title {
+	text-align: center;
+	font-size: 2.5rem;
+	padding: .5rem 0;
+	border-bottom: 2px solid var(--golder);
+}
+
+.container-glide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
