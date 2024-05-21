@@ -40,7 +40,7 @@ html {
 	color: var(--text-base);
 	overflow-x: hidden;
     font-family: "Inria Sans", sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .w-half {
@@ -59,11 +59,11 @@ body:nth-child(odd){
 /* BOTAO DE WPP */
 .button-wpp {
 	transition: 0.2s;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem;
 	min-width: 35vw;
+	font-size: 1.4rem;
 	letter-spacing: 3px;
 	color: var(--text-base);
-	font-size: calc(100vw / 60);
 	font-weight: bold;
 	text-decoration: none;
 	background: var(--whatsapp-color);
@@ -84,8 +84,8 @@ body:nth-child(odd){
 .button-wpp svg {
 	transition: 0.2s;
 	fill: white;
-	height: 100%;
-	width: 10%;
+	height: 80%;
+	width: 5%;
 }
 
 .button-wpp:hover {
@@ -159,7 +159,7 @@ body:nth-child(odd){
 	padding: 1rem 0;
 	text-align: center;
 	color: var(--primary);
-	border-bottom: 2px solid var(--golder);
+	/* border-bottom: 2px solid var(--golder); */
 }
 
 .cards-service div {
@@ -182,13 +182,118 @@ body:nth-child(odd){
 
 .section-04 .title {
 	text-align: center;
-	font-size: 2.5rem;
-	padding: .5rem 0;
-	border-bottom: 2px solid var(--golder);
+	font-size: 3rem;
+	padding: 1rem 0;
+	/* border-bottom: 2px solid var(--golder); */
 }
 
 .container-glide {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+
+strong{
+    color: var(--golder);
+}
+
+.about {
+	display: flex;
+	justify-content: right;
+}
+
+.about .container-wpp {
+	justify-content: center;
+}
+
+.content-about {
+	text-align: center;
+    font-size: 130%;
+	padding: 20px;
+	width: 50%;
+}
+
+.content-about h1 {
+	margin: 1rem 0;
+	font-size: 3rem;
+}
+
+.content-about p {
+	margin-bottom: 2rem;
+}
+
+.section-04 {
+	background: var(--secondary);
+    color: var(--primary);
+}
+
+.section-05 {
+	background-color: var(--primary-black);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center;
+}
+
+@media  screen and (max-width: 930px) {
+	.section-05 {
+		text-align: center;
+	}
+
+	.section-05 .container-wpp {
+		padding-bottom: 2rem
+	}
+}
+
+.content-section-05 {
+	padding: 50px;
+}
+
+.content-section-05 h2 {
+	font-size: 40px;
+}
+
+footer {
+	width: 100%;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+	padding: 3rem;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.logo-footer {
+	padding: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid var(--golder);
+	border-left: 1px solid var(--golder)
+}
+
+.info img {
+	width: 100%;
+	max-width: 400px;
+	min-width: 200px;
+}
+
+.info div {
+	flex: 1;
+}
+
+iframe {
+	width: 100%;
+}
+
+.address p {
+	height: 100%;
+	font-size: 135%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
