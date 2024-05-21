@@ -62,12 +62,21 @@ strong{
 }
 
 footer {
-    display: flex;
 	text-align: center;
 	width: 100%;
 }
 
+.info{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
 .logo-footer img {
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 400px;
+}
+
+.address{
+    margin: 5rem;
 }
