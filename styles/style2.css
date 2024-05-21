@@ -62,6 +62,7 @@ strong{
 }
 
 footer {
+    display: flex;
 	text-align: center;
 	width: 100%;
 }
