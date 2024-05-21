@@ -122,8 +122,8 @@ body:nth-child(odd){
 	gap: 2rem;
 }
 
-.container-need .container-wpp {
-	width: 90%;
+.container-wpp {
+	display: flex;
 }
 
 .container-need .button-wpp {
@@ -136,6 +136,7 @@ body:nth-child(odd){
 }
 
 .cards-service {
+	font-size: 110%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -146,11 +147,12 @@ body:nth-child(odd){
 }
 
 .services h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	padding: 1rem 0;
 	text-align: center;
-	color: var(--golder);
+	color: var(--primary);
+	border-bottom: 2px solid var(--golder);
 }
 
 .cards-service div {
@@ -166,4 +168,7 @@ body:nth-child(odd){
 	color: rgb(97, 97, 97)
 }
 
-.cards-service div 
+.cards-service div svg {
+	width: 60px;
+	height: 60px;
+}
