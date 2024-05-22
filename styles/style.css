@@ -59,10 +59,13 @@ body:nth-child(odd){
 /* BOTAO DE WPP */
 .button-wpp {
 	transition: 0.2s;
-	padding: 0.5rem;
-	letter-spacing: 3px;
+	padding: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	letter-spacing: 0.5px;
 	color: var(--text-base);
 	font-weight: bold;
+	font-size: 17px;
 	text-decoration: none;
 	background: var(--whatsapp-color);
 	color: white;
@@ -77,14 +80,14 @@ body:nth-child(odd){
 	display: block;
 	text-align: center;
 	width: 100%;
-	margin: 0 .2rem 0 0
+	margin: 0 .2rem 0 0;
 }
 
 .button-wpp svg {
 	transition: 0.2s;
 	fill: white;
-	height: 20px;
-	width: 20px;
+	height: 2rem;
+	width: 2rem;
 }
 
 .button-wpp:hover {
